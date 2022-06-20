@@ -3,8 +3,7 @@
 <h3>Número de estudiantes {{ numero_estudiantes }}</h3>
 
 {% for e in estudiantes %}
-
-  {{e}} <br/>
+<b>{{e.nombre}}</b> {{e.apellido}} {{e.cedula}}
   <ul>
   {% for numero in e.mis_numeros_telefonicos.all %}
       <li>
